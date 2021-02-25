@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+
+	body{
+        
+		background-image: linear-gradient(to bottom right, rgb(88, 111, 245), rgb(186, 83, 245));
+	}
+.center-column{
+		width:600px;
+		
+		margin: 20% auto;
+		padding:50px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+}
+.center-column h3{
+	margin-bottom: 5%;
+}
+
+</style>
+
+
+<div class = "item-row">
+<div class = "center-column">
+<h3> Edit your task</h3>
+
+<form method  ="POST" action ="">
+     {% csrf_token %}
+
+     {{form}}
+    <input class=" btn btn-sm btn-info" type ="submit" name ="edit">
+    
+</form>
+</div>
+</div>
